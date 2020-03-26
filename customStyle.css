@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.vpheight {
+  height: 100vh;
+}
+
+/* Text related */
+
+.josefin{
+    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.montserrat{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lightGreyText{
+
+    color: gray;
+}
+
+.blackText{
+
+    color: black;
+}
+
+.bigText{
+
+    font-size: 8vh;
+}
+
+.mediumText{
+
+    font-size: 150%;
+}
+
+.smallText{
+
+    font-size: 90%;
+}
+
+/* link styles */
+
+
+a:link {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+    
+    
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+  /* animations */
+
+  .zoom:hover {
+    transition: transform .5s ease;
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .lightzoom:hover{
+
+    transition: transform .5s ease;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+
+  /* tabs */
+
+  .tabs {
+	clear: both;
+	position: relative;   
+   max-width: 1650px;
+   margin: 0 auto;
+   /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+	float: right;
+}
+
+.tab label {
+	margin-right: 20px;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	color: #333;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+   position: relative;
+	top: 40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+	opacity: 0;
+}
+
+[type=radio]:checked ~ label {
+	border-bottom: 2px solid #1d1d1d;
+	color: #1d1d1d;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
+}
