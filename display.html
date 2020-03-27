@@ -25,13 +25,13 @@
                 <span class="montserrat">
                 <ul class="nav justify-content-center py-4 ">
                     <li class="nav-item px-2">
-                      <a class="nav-link textWhite" href="#work">My work</a>
+                      <a class="nav-link textWhite lightzoom" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                      <a class="nav-link textWhite" href="#about">About me</a>
+                      <a class="nav-link textWhite lightzoom" href="#about">About me</a>
                     </li>
                     <li class="nav-item px-2">
-                      <a class="nav-link textWhite" href="#contact">Contact me</a>
+                      <a class="nav-link textWhite lightzoom" href="#contact">Contact me</a>
                     </li>
                     
                   </ul>
@@ -39,123 +39,91 @@
             </div>
     
         </section>
+        <section id="display">
+            <ul class="nav nav-tabs montserrat" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="ArtNCraft" aria-selected="true">Art & Craft</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="Digital" aria-selected="false">Digital</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="Photography" aria-selected="false">Photography</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="Technical" aria-selected="false">Technical</a>
+                </li>
+              </ul>
+              
+              <div class="tab-content text-center">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <img src="./images/artist.svg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+                    <p class="josefin bigText">Art & Craft</p>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./images/3.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/4.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/5.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/6.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./images/7.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/8.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/9.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img src="./images/10.jpg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <img src="./images/digitalArtist.svg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 150px; height: auto;" alt="">
+                    <p class="josefin bigText">Digital</p>
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                    <img src="./images/photographer.svg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 200px; height: auto;" alt="">
+                    <p class="josefin bigText">Photography</p>
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <img src="./images/coder.svg" class="img-fluid mx-auto pt-5 pt-2" style="max-width: 150px; height: auto;" alt="">
+                    <p class="josefin bigText">Technical</p>
+                </div>
+              </div>
+        </section>
 
         <!-- https://codepen.io/japick/pen/NvqKLJ is where i got the code for the custom tabs -->
 
-        <section id="pics">
+        <!-- <section id="pics">
             <div data-tabs class="tabs montserrat">    
                 <div class="tab">
                    <input type="radio" name="tabgroup" id="tab-1" checked>
                    <label for="tab-1">Art & Craft</label>
                    <div class="tab__content text-center">
                       <p class="josefin bigText">Art & Craft</p>
-                      
-
-
-                      <section class="portfolio-section pt-5">
-                        <div class="container">
-                            
-                        </div>                       
-                        <div class="container-fluid p-0">
-                            <div class="row portfolios-area">
-                                
-                                
-                                
-                                <div class="mix col-md-6 col-lg-3 rened">
-                                    <a href="img/portfolio/3.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/3.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Campaign</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 digital">
-                                    <a href="img/portfolio/4.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/4.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Campaign</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 rened">
-                                    <a href="img/portfolio/5.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/5.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>A cup of tea please</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 brand">
-                                    <a href="img/portfolio/6.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/6.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Campaign</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 brand">
-                                    <a href="img/portfolio/9.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/9.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Identity for Company</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 rened">
-                                    <a href="img/portfolio/10.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/10.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Campaign</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 digital">
-                                    <a href="img/portfolio/7.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/7.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>A cup of tea please</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                                <div class="mix col-md-6 col-lg-3 brand">
-                                    <a href="img/portfolio/8.jpg" class="portfolio-item pi-style2 set-bg" data-setbg="img/portfolio/8.jpg">
-                                        <div class="pi-inner">
-                                            <h2>+ See Project</h2>
-                                        </div>						
-                                    </a>
-                                    <div class="portfolio-meta">
-                                        <h2>Brand Campaign</h2>
-                                        <p>Graphic design</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-
-
+                                            
 
                    </div> 
                 </div>
@@ -190,13 +158,13 @@
 
 
         </section>
-       
+        -->
        
 
 
         
      
-        <section id="contact">
+        <section class="pt-5" id="contact">
           <div class="row">
             <div class="col-md-6 offset-md-3 text-center">
               <p class="montserrat smallText"  style="line-height: 2px;">Find me on</p>
@@ -241,7 +209,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
         (function($, document) {
     
     // get tallest tab__content element
@@ -258,7 +226,13 @@
 }(jQuery, document));
 
 
-    </script>
+    </script> -->
+    
+<script>
+    $(function () {
+      $('#myTab li:last-child a').tab('show')
+    })
+  </script>
 
 </body>
 </html>
