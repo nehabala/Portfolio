@@ -7,6 +7,7 @@ body {
   height: 100vh;
 }
 
+
 /* Text related */
 
 .josefin{
@@ -129,4 +130,28 @@ a:link {
 [type=radio]:checked ~ label ~ .tab__content {
 	z-index: 1;
 	opacity: 1;
+}
+
+/* work gallery */
+
+
+.modal,body.modal-open {
+  padding-right: 0!important
+}
+
+body.modal-open {
+  overflow: auto
+}
+
+body.scrollable {
+  overflow-y: auto
+}
+
+.modal-footer {
+display: flex;
+justify-content: flex-start;
+.btn {
+  position: absolute;
+  right: 10px;
+}
 }
