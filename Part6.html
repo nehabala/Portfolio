@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%; 
+            }
+
+            button {
+                all: unset;
+                cursor: pointer;
+                display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            
+            html, body {margin: 0; height: 100%; overflow: hidden}
+
+            /* div {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                margin: auto;
+            } */
+
+            i/* .responsive {
+                max-width: 200%;
+                height: auto;
+            } */
+
+        </style>
+    </head>
+<body>
+
+<audio id="myAudio">
+  <source src="Part6.html" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<div id="play" style="align-items: center;">
+    <button onclick="playAudio()" type="button"><img src="PlayButtonGif.gif" alt="Play"></button>
+    
+</div>
+
+<div id="pause">
+    <!-- <button onclick="pauseAudio()" type="button"><img src="Pause.jpg" alt="Play" class="responsive"></button> -->
+    <button type="button"><img src="Voice.gif" alt="Play" class="responsive"></button>
+</div>
+
+<script>
+document.getElementById("pause").style.display = "none";
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+document.getElementById("play").style.display = "none";
+document.getElementById("pause").style.display = "block";
+  x.play(); 
+  hidePlayButton();
+ 
+} 
+
+function pauseAudio() { 
+
+  x.pause();
+  document.getElementById("play").style.display = "none"; 
+  document.getElementById("pause").style.display = "block";
+  } 
+
+ function delay(n){
+     return new Promise(function(resolve){
+         setTimeout(resolve,n*1000);
+     });
+ }
+
+ async function hidePlayButton(){
+     //Do what you want here 
+     console.log("Before the delay");
+        await delay(59);
+     document.getElementById("play").style.display = "block";
+     document.getElementById("pause").style.display = "none";
+     console.log("After the delay");
+     //Do what you want here too
+
+ }
+
+
+
+</script>
+
+</body>
+</html>
